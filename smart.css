@@ -129,16 +129,3 @@ p{
     font-size: 45px;   
 }
 
-.signup-btn2{
-    color:rgb(9, 9, 171);
-    text-decoration: none;
-    background-color:white;
-    padding: 10px 20px;
-    margin-left: 650px;
-    border-radius: 100px;
-    cursor: pointer;
-    position:absolute;
-    font-size: large;
-    top:300px;
-    font-weight: bold;
-}
