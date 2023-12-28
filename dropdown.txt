@@ -1,0 +1,17 @@
+Here are some best practices to make a better looking dropdown menu1:
+1.Keep menus under two levels deep.
+2.Create a clear and well-structured drop-down menus.
+3.Add hover or selection effects to stand out menu items.
+4.Use icons or images to enrich your drop-down menus.
+5.Keep menu styles consistent.
+6.Grey out unavailable menu items.
+7.Add quick dropdown animations.
+8.Use the semi-transparent background to stand out your menus.
+
+To make a hoverable dropdown menu, you can follow these steps2:
+1.Create and style a div with a class name “dropdown.”
+2.Create the hoverable element.
+3.Create and style the dropdown content.
+4.Set the dropdown menu’s hover state.
+5.Style the links inside the dropdown menu.
+6.Change the color of dropdown links on hover
