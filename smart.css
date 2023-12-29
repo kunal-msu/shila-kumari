@@ -1,8 +1,13 @@
 body {
-    background-image: url("bg.jpeg");
-    background-repeat: no-repeat;
+    background-image:url("bg.jpg");
+    background-repeat:no-repeat ;
     background-size: cover;
-
+}
+.body-content {
+      flex: 1;
+      padding: 20px;
+      /* Add additional styles for body content */
+    }
 
 header {
     background-color:white;
@@ -25,7 +30,7 @@ header {
     align-items: center;
     position:fixed;
     height:auto;
-    left:140px;
+    left:14px;
     width:120px;
 
 }
@@ -145,3 +150,29 @@ p{
     font-weight: bold;
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    width: 48%; 
+  }
+
+  
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+    }
+
+    .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }}
