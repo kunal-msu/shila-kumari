@@ -1,8 +1,7 @@
 body {
-    background-color:rgb(46, 182, 227);
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
+    background-image: url("bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 header {
