@@ -12,9 +12,7 @@ header {
 	
 }
 
-.logo {
-    
-}
+
 
 .logo-in-nav img {
     max-height: 40px; 
@@ -22,6 +20,8 @@ header {
 
 .navbar {
     color:black;
+    background-attachment: fixed;
+    background-color:#fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -213,33 +213,56 @@ footer {
             color: white;
         }
         .content3{
-            height:500px;
+            height:400px;
             text-align:left;
             font-size: x-large;
             line-height:2em;
-            color: rgb(135, 189, 242);
+            color: rgb(41, 137, 234);
 
         }
 
         .content4{
             position:relative;
             right: 50px;
-            height:500px;
+            height:400px;
             text-align:right;
             font-size: x-large;
             line-height:2em;
-            color: rgb(135, 189, 242);
+            color: rgb(41, 137, 234));
 
         }
         .content5{
-            height:500px;
+            height:400px;
             text-align:left;
             font-size: x-large;
             line-height:2em;
-            color: rgb(135, 189, 242);
+            color: rgb(41, 137, 234);
 
         }
 
+        .content6{
+            background-color: white;
+            position:relative;
+            right: 50px;
+            height:400px;
+            text-align:center;
+            font-size: x-large;
+            line-height:2em;
+            color: rgb(41, 137, 234);
+
+        }
+        .content7{
+            padding-top: 6px;
+            background-color:rgb(41, 137, 234);
+            position:relative;
+            right: 50px;
+            height:400px;
+            text-align:center;
+            font-size: x-large;
+            line-height:2em;
+            color:#fff;
+
+        }
 .image{
     background-image: url("bg.jpg");
     background-size:cover;
