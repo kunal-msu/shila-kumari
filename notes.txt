@@ -6,3 +6,4 @@ Easy to use: Anybody with just basic knowledge of HTML and CSS can start using B
 Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
 Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
 Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+Interactivity is the communication process that takes place between humans and computer software. It refers to the involvement of users in the exchange of information with computers and the degree to which this happens1. Interactivity is a key characteristic of user-friendly digital environments where users play an active role by selecting inputs, making choices, or modifying content
