@@ -191,21 +191,95 @@ footer {
             width: 100%;
             background-color: #f1f1f1; /* Set your desired background color */
             margin-bottom: 10px; /* Set your desired margin or spacing between containers */
-            background-image: url('bg.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-            background-size: cover; /* Adjust the background size as needed */
-            background-position: center; /* Adjust the background position as needed */
-            color: #fff; /* Set your desired text color */
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            
         }
 
         /* Style for the content div inside each container */
-        .content {
-            padding: 20px; /* Set your desired padding for the content div */
+        .content1 {
+            padding: 30px; /* Set your desired padding for the content div */
             text-align: center;
             height:500px;
+            font-size:xx-large;
+            line-height: auto;
+            color: white;
+            line-height:2em ;
+        }
+        .content2{
+            background-color:#1035a5;
+            height:150px;
+            text-align: center;
+            font-size: x-large;
+            line-height: 5em;
+            color: white;
+        }
+        .content3{
+            height:500px;
+            text-align:left;
+            font-size: x-large;
+            line-height:2em;
+            color: rgb(135, 189, 242);
+
         }
 
+        .content4{
+            position:relative;
+            right: 50px;
+            height:500px;
+            text-align:right;
+            font-size: x-large;
+            line-height:2em;
+            color: rgb(135, 189, 242);
 
+        }
+        .content5{
+            height:500px;
+            text-align:left;
+            font-size: x-large;
+            line-height:2em;
+            color: rgb(135, 189, 242);
 
+        }
+
+.image{
+    background-image: url("bg.jpg");
+    background-size:cover;
+   background-position:30px ;
+}
+ 
+.image2{
+    background-image: url("2.jpg");
+    background-repeat: no-repeat;
+    background-position:800px;
+  
+}
+
+.image3{
+    background-image: url("3.jpg");
+    background-repeat: no-repeat;
+    background-position:0px;
+
+  
+}
+.image4{
+    background-image: url("4.jpg.jpeg");
+    background-repeat: no-repeat;
+    background-position:800px;
+  
+}
+
+.signup-container {
+    text-align: center;
+    line-height:2em;
+  }
+
+  .signup-button {
+    padding: 6px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1774b2;
+    background-color:#fff;
+    border-radius: 40px;
+  }
+
+  
