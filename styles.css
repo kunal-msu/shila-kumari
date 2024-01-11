@@ -186,6 +186,7 @@ footer {
     padding: 10px;
     max-width: 100%;
 }
+
  
    .container {
             width: 100%;
@@ -212,20 +213,13 @@ footer {
             line-height: 5em;
             color: white;
         }
-        .content3{
-            height:400px;
-            text-align:left;
-            font-size: x-large;
-            line-height:2em;
-            color: rgb(41, 137, 234);
-
-        }
+       
 
         .content4{
             position:relative;
             right: 50px;
             height:400px;
-            text-align:right;
+            text-align:left;
             font-size: x-large;
             line-height:2em;
             color: rgb(41, 137, 234));
@@ -269,24 +263,39 @@ footer {
    background-position:30px ;
 }
  
-.image2{
-    background-image: url("2.jpg");
+
+
+
+.container2{
+    display: flex;
+}
+.box-1{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    line-height:2em;
+    color: rgb(41, 137, 234);
+   
+}
+.box-2{
+    height: 400px;
+    width: 100%;
+    
+    
+}
+.container2,.image2{
+    background-image: url("bg2.png");
     background-repeat: no-repeat;
     background-position:800px;
+    width:100%;
   
 }
-
-.image3{
-    background-image: url("3.jpg");
-    background-repeat: no-repeat;
-    background-position:0px;
-
-  
-}
-.image4{
-    background-image: url("4.jpg.jpeg");
+.container3,.image3{
+    background-image: url("bg3.png");
     background-repeat: no-repeat;
     background-position:800px;
+    width:100%;
   
 }
 
