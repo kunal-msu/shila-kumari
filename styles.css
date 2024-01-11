@@ -19,6 +19,7 @@ header {
 }
 
 .navbar {
+    font-family:sans-serif;
     color:black;
     background-attachment: fixed;
     background-color:#fff;
@@ -27,7 +28,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    font-weight: bold;
+    font-weight:bold ;
 }
 
 
@@ -197,6 +198,7 @@ footer {
 
         /* Style for the content div inside each container */
         .content1 {
+            font-family: sans-serif;
             padding: 30px; /* Set your desired padding for the content div */
             text-align: center;
             height:500px;
@@ -206,6 +208,7 @@ footer {
             line-height:2em ;
         }
         .content2{
+            font-family: sans-serif;
             background-color:#1035a5;
             height:150px;
             text-align: center;
@@ -214,45 +217,12 @@ footer {
             color: white;
         }
        
-        .co
-
-        }
-        .content5{
-            height:400px;
-            text-align:left;
-            font-size: x-large;
-            line-height:2em;
-            color: rgb(41, 137, 234);
-
-        }
-
-        .content6{
-            background-color: white;
-            position:relative;
-            right: 50px;
-            height:400px;
-            text-align:center;
-            font-size: x-large;
-            line-height:2em;
-            color: rgb(41, 137, 234);
-
-        }
-        .content7{
-            padding-top: 6px;
-            background-color:rgb(41, 137, 234);
-            position:relative;
-            right: 50px;
-            height:400px;
-            text-align:center;
-            font-size: x-large;
-            line-height:2em;
-            color:#fff;
-
-        }
+        
+       
 .image{
     background-image: url("bg.jpg");
     background-size:cover;
-   background-position:30px ;
+    background-position:30px ;
 }
  
 
@@ -262,13 +232,14 @@ footer {
     display: flex;
 }
 .box-1{
+    font-family: sans-serif;
     height: 400px;
     width: 100%;
     height:400px;
-            text-align:left;
-            font-size: x-large;
-            line-height:2em;
-            color: rgb(41, 137, 234);
+    text-align:left;
+    font-size: x-large;
+    line-height:2em;
+    color: rgb(41, 137, 234);
 
    
 }
@@ -300,29 +271,29 @@ footer {
     background-image: url("bg3.png");
     background-repeat:no-repeat;
     background-position:0;
-background-color: #FFF;
+    background-color: #FFF;
     text-align: center;
   
    
 }
 .box-4{
+    font-family: sans-serif;
     height: 400px;
     width: 100%;
     text-align: left;
-   background-color: #FFF;
-        position:relative;
-        right: 50px;
-        
-    
-        font-size: x-large;
-        line-height:2em;
-        color: rgb(41, 137, 234);
+    background-color: #FFF;
+    position:relative;
+    right: 50px;
+    font-size: x-large;
+    line-height:2em;
+    color: rgb(41, 137, 234);
 }
 
 .bbox{
     display: flex;
 }
 .box-5{
+    font-family: sans-serif;
     height: 400px;
     width: 100%;
     text-align: left;
@@ -346,9 +317,11 @@ background-color: #FFF;
 .signup-container {
     text-align: center;
     line-height:2em;
+    font-family: sans-serif;
   }
 
   .signup-button {
+    font-family: sans-serif;
     padding: 6px 30px;
     font-size: 18px;
     font-weight: bold;
