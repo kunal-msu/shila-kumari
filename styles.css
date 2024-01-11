@@ -191,15 +191,15 @@ footer {
  
    .container {
             width: 100%;
-            background-color: #f1f1f1; /* Set your desired background color */
-            margin-bottom: 10px; /* Set your desired margin or spacing between containers */
+            background-color: #f1f1f1; 
+            margin-bottom: 10px; 
             
         }
 
-        /* Style for the content div inside each container */
+       
         .content1 {
             font-family: sans-serif;
-            padding: 30px; /* Set your desired padding for the content div */
+            padding: 30px; 
             text-align: center;
             height:500px;
             font-size:xx-large;
