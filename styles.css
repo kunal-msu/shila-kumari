@@ -214,15 +214,7 @@ footer {
             color: white;
         }
        
-
-        .content4{
-            position:relative;
-            right: 50px;
-            height:400px;
-            text-align:left;
-            font-size: x-large;
-            line-height:2em;
-            color: rgb(41, 137, 234));
+        .co
 
         }
         .content5{
@@ -272,15 +264,21 @@ footer {
 .box-1{
     height: 400px;
     width: 100%;
-    text-align: center;
-    font-size: x-large;
-    line-height:2em;
-    color: rgb(41, 137, 234);
+    height:400px;
+            text-align:left;
+            font-size: x-large;
+            line-height:2em;
+            color: rgb(41, 137, 234);
+
    
 }
 .box-2{
     height: 400px;
     width: 100%;
+     background-image: url("bg2.png");
+    background-repeat: no-repeat;
+    background-position:800px;
+    width:100%;
     
     
 }
@@ -291,14 +289,60 @@ footer {
     width:100%;
   
 }
-.container3,.image3{
+.fbox
+{display: flex;}
+
+
+
+.box-3{
+    height: 400px;
+    width: 100%;
     background-image: url("bg3.png");
-    background-repeat: no-repeat;
-    background-position:800px;
-    width:100%;
+    background-repeat:no-repeat;
+    background-position:0;
+background-color: #FFF;
+    text-align: center;
   
+   
+}
+.box-4{
+    height: 400px;
+    width: 100%;
+    text-align: left;
+   background-color: #FFF;
+        position:relative;
+        right: 50px;
+        
+    
+        font-size: x-large;
+        line-height:2em;
+        color: rgb(41, 137, 234);
 }
 
+.bbox{
+    display: flex;
+}
+.box-5{
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    position:relative;
+    right: 50px;
+    font-size: x-large;
+    line-height:2em;
+    color: rgb(41, 137, 234);
+}
+
+.box-6{
+    height: 400px;
+    width: 100%;
+    background-image: url("4.jpg.jpeg");
+    background-repeat:no-repeat;
+    background-position:0;
+    text-align: center;
+  
+   
+}
 .signup-container {
     text-align: center;
     line-height:2em;
