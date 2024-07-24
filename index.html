@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="ojt.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        // Disable keyboard shortcuts
+        document.addEventListener('keydown', event => {
+            if (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'i' || event.key === 'c' || event.key === 'j') || event.key === 'F12') {
+                event.preventDefault();
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./medhavi.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Non-Academics</a></li>
+                        <li><a href="#">Milliceaous</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">My Projects</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
+                        <li><a href="#">Project 4</a></li>
+                        <li><a href="#">Project 5</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Blog</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Latest Posts</a></li>
+                        <li><a href="#">Archives</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Contact</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn login-btn">Login/Register</a>
+    </header>
+    <style>
+        /* Carousel */
+        .carousel {
+          position: relative;
+        }
+        
+        .carousel-inner {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+        }
+        
+        .carousel-item {
+          position: relative;
+          display: none;
+          float: left;
+          width: 100%;
+          margin-right: -100%;
+          backface-visibility: hidden;
+          transition: transform 0.6s ease-in-out;
+        }
+        
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+          display: block;
+        }
+        
+        /* Carousel Controls */
+        .carousel-control-prev,
+        .carousel-control-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 5%;
+          height: 100%;
+          color: #fff;
+          text-align: center;
+          opacity: 0.5;
+          transition: opacity 0.15s ease;
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+          opacity: 0.9;
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: no-repeat 50%/100% 100%;
+        }
+        
+        .carousel-control-prev-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        }
+        
+        .carousel-control-next-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+        }
+        
+        /* Carousel Indicators */
+        .carousel-indicators {
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 15;
+          display: flex;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        .carousel-indicators button {
+          background-color: rgba(255, 255, 255, 0.5);
+          border: none;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin: 0 5px;
+          padding: 0;
+          cursor: pointer;
+          transition: background-color 0.15s ease;
+        }
+        
+        .carousel-indicators button.active {
+          background-color: #fff;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+          .carousel-control-prev,
+          .carousel-control-next {
+            width: 8%;
+          }
+        }
+    </style>
+    <main>
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel" id="carousel1">
+                    <div class="carousel-item active">
+                        <h2>Web Development</h2>
+                        <h3><p>I love creating interactive and responsive websites that provide user experience.</p>
+                            <p>The blend of creativity and logic in web development keeps me constantly engaged and motivated.</p></h3>
+                    <button class="hire-me">Hire Me</button>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Programming and Applications</h2>
+                        <h3><p>Programming allows me to solve complex problems and help people.</p> 
+                            <p>The challenge and satisfaction of debugging is what I enjoy most.</p></h3>
+                        <button class="hire-me">Hire Me</button>
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Drawing</h2>
+                       <h3> <p>Drawing is my hobby and this is what i do when i am free .</p>
+                        <p>I like drawing because it helps me relax .</p></h3>
+                        <button class="hire-me">Hire Me</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel2">
+                    <img src="g.jpg" alt="Image 1">
+                    <img src="gg.jpg" alt="Image 2">
+                    <img src="ggg.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <div class="social-media">
+            <a href="https://www.facebook.com/" class="icon"><img src="f.jpg" alt="Facebook"></a>
+            <a href="https://x.com/?lang=en-in" class="icon"><img src="t.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/?hl=en" class="icon"><img src="i.jpg" alt="Instagram"></a>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3549.3424507012724!2d88.52027177544868!3d27.17697167649071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDEwJzM3LjEiTiA4OMKwMzEnMjIuMyJF!5e0!3m2!1sen!2sin!4v1717580878693!5m2!1sen!2sin" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <form id="login-form" action="login.php" method="post">
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="password" placeholder="Password" name="Password" required>
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                <button type="submit" class="btn">Login</button>
+                <div class="form-group">
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember-me"> Remember Me
+                    </label>
+                </div>
+                <p class="toggle-form">Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </form>
+            <form id="register-form" style="display: none;" action="register.php" method="post">
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="email" placeholder="Email" name="Email" required>
+                <input type="password" placeholder="Password" name="Password" required>
+                <input type="password" placeholder="Confirm Password" name="Confirm_Password" required>
+                <input type="tel" placeholder="Phone number" name="Phonenumber" required>
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                <button type="submit" class="btn">Register</button>
+                <p class="toggle-form">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const loginBtn = document.querySelector('.login-btn');
+const popup = document.getElementById('popup');
+const closeBtn = document.querySelector('.close-btn');
+const showRegister = document.getElementById('show-register');
+const showLogin = document.getElementById('show-login');
+const loginForm = document.getElementById('login-form');
+const registerForm = document.getElementById('register-form');
+
+loginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+
+showRegister.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'block';
+});
+
+showLogin.addEventListener('click', (e) => {
+    e.preventDefault();
+    registerForm.style.display = 'none';
+    loginForm.style.display = 'block';
+});
+
+</script>
+</html>
